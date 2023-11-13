@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
 from statsmodels.graphics.mosaicplot import mosaic
+from scipy.stats import chi2_contingency
 
 def tab_one():
     
@@ -132,11 +133,11 @@ def tab_two():
         st.write(f"Moda: {mode_val}")
 
         #Minimo y maximo de la variable
-        min = ss.dataset[variable].min()
-        max = ss.dataset[variable].max()
+        var_min = ss.dataset[variable].min()
+        var_max = ss.dataset[variable].max()
         kde = stats.gaussian_kde(ss.dataset[variable])
 
-        rangos = st.slider(f"Valor de {variable}",min,max,(min,max))
+        rangos = st.slider(f"Valor de {variable}",var_min,var_max,(var_min,var_max))
         r_min = rangos[0]
         r_max = rangos[1]
 
@@ -216,11 +217,24 @@ def tab_two():
     var41 = col1.selectbox("Seleccione la variable categórica 1 - Eje X", categoricas)
     var42 = col2.selectbox("Seleccione la variable categórica 2 - Eje Y", categoricas)
 
-    if var31 is not None and var32 is not None:
+    def cramers_v(confusion_matrix):
+        chi2, _, _, _ = chi2_contingency(confusion_matrix)
+        n = confusion_matrix.sum().sum()
+        phi2 = chi2 / n
+        r, k = confusion_matrix.shape
+        phi2corr = np.maximum(0, phi2 - ((k-1)*(r-1))/(n-1))
+        rcorr = r - ((r-1)**2)/(n-1)
+        kcorr = k - ((k-1)**2)/(n-1)
+        return np.sqrt(phi2corr / min((kcorr-1), (rcorr-1)))
+
+    if var41 is not None and var42 is not None:
         contingency_table = pd.crosstab(ss.dataset[var41], ss.dataset[var42])
-        fig, ax = plt.subplots(figsize=(8, 6))
+        fig4, ax = plt.subplots(figsize=(8, 6))
         mosaic(contingency_table.stack(), ax=ax, labelizer=lambda k: "")
-        st.pyplot(fig)
+        st.pyplot(fig4)
+        cramer_v = cramers_v(contingency_table.values)
+        st.write(f"Cramer's V: {cramer_v:.4f}")
+
     else:
         st.error("Una de las variables no se encuentra disponible en el dataset")
 
