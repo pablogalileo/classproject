@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
-from summarytools import dfSummary
+from statsmodels.graphics.mosaicplot import mosaic
 
 def tab_one():
     
@@ -45,7 +45,7 @@ def tab_two():
 
 
     st.markdown("### Variables")
-        
+   
     #Encontramos cada tipo de variable
 
     categoricas = []
@@ -59,10 +59,10 @@ def tab_two():
     for col in ss.dataset.columns:
         if((ss.dataset[col].dtype=='float64')or(ss.dataset[col].dtype=='int64')):
             numericas.append(col)
-            if(len(ss.dataset[col].unique()) <= 30):
-                continuas.append(col)
-            else:
+            if(len(ss.dataset[col].unique()) <= 50):
                 discretas.append(col)
+            else:
+                continuas.append(col)
 
     fechas = []
     for col in ss.dataset.columns:
@@ -80,15 +80,22 @@ def tab_two():
 
     columns = ss.dataset.columns.tolist()
 
-    st.markdown("#### Seleccione una variable para ver la descripción estadística")
+    st.markdown("### Información descriptiva y gráficas de variables")
 
-    variable = st.selectbox("Variable",columns)
+    variable = st.selectbox("Seleccione una variable",columns)
+
+    st.dataframe(ss.dataset[variable].describe())
+    mean_val = ss.dataset[variable].mean()
+    median_val = ss.dataset[variable].median()
+    std_dev_val = ss.dataset[variable].std()
+    variance_val = ss.dataset[variable].var()
+    mode_val = ss.dataset[variable].mode().iloc[0]
 
     if variable in categoricas:
         col1, col2 = st.columns(2)
         col1.dataframe(ss.dataset[variable].value_counts())
         col2.dataframe(ss.dataset[variable].describe())
-        # Count the occurrences of each category
+
         category_counts = ss.dataset[variable].value_counts()
         fig, ax = plt.subplots()
         sns.barplot(x=category_counts.index, y=category_counts.values, ax=ax)
@@ -96,14 +103,8 @@ def tab_two():
         plt.ylabel("Count")
         plt.title(f"Bar Chart of {variable}")
         st.pyplot(fig)
-    else: 
-        st.dataframe(ss.dataset[variable].describe())
-        mean_val = ss.dataset[variable].mean()
-        median_val = ss.dataset[variable].median()
-        std_dev_val = ss.dataset[variable].std()
-        variance_val = ss.dataset[variable].var()
-        mode_val = ss.dataset[variable].mode().iloc[0]
 
+    elif variable in discretas: 
         st.write(f"Mediana: {median_val}")
         st.write(f"Varianza: {variance_val}")
         st.write(f"Moda: {mode_val}")
@@ -123,6 +124,12 @@ def tab_two():
         ax.set_title(f"Histograma de {variable}")
 
         st.pyplot(fig)
+
+    elif variable in continuas:
+
+        st.write(f"Mediana: {median_val}")
+        st.write(f"Varianza: {variance_val}")
+        st.write(f"Moda: {mode_val}")
 
         #Minimo y maximo de la variable
         min = ss.dataset[variable].min()
@@ -153,15 +160,69 @@ def tab_two():
 
         st.text(f'Probabilidad: {np.round(np.sum(y),4)/100}')
 
+    #### GRAFICAS COMBINADAS
+    st.markdown("### Graficas combinadas")
+    st.markdown("#### Numérica vs Numérica")
 
-    
-    fig2 = plt.figure(figsize=(10,4))
-    variableA = st.selectbox("Variable Numerica", numericas)
-    variableB = st.selectbox("Variable Categorica", categoricas)
 
-    sns.boxplot(data=ss.dataset, x=variableB, y=variableA)
-    st.pyplot(fig2)
+    col1,col2 = st.columns(2)
+    var11 = col1.selectbox("Seleccione la variable numérica 1 - Eje X", numericas)
+    var12 = col2.selectbox("Seleccione la variable numérica 2 - Eje Y", numericas)
 
+    if var11 is not None and var12 is not None:
+        fig1 = plt.figure(figsize=(10,4))   
+        sns.scatterplot(data=ss.dataset, x=var11, y=var12)
+        correlation_coefficient = ss.dataset[var11].corr(ss.dataset[var12])
+        plt.title(f"Scatter Plot entre {var11} - {var12}\nCoeficiente de correlacion: {correlation_coefficient:.2f}")
+        st.pyplot(fig1)
+    else:
+        st.error("Una de las variables no se encuentra disponible en el dataset")
+
+
+    st.markdown("#### Numérica vs Temporal")
+
+    col1,col2 = st.columns(2)
+    var21 = col1.selectbox("Seleccione la variable temporal - Eje X", fechas)
+    var22 = col2.selectbox("Seleccione la variable numérica - Eje Y", numericas)
+
+    if var21 is not None and var22 is not None:
+        fig2, ax = plt.subplots(figsize=(10, 6))
+        ax.plot(ss.dataset[var21], ss.dataset[var22])
+        ax.set_xlabel("Date")
+        ax.set_ylabel(var22)
+        ax.set_title(f"Serie de tiempo para {var22}")
+        st.pyplot(fig2)
+    else:
+        st.error("Una de las variables no se encuentra disponible en el dataset")
+
+
+    st.markdown("#### Numérica vs Categórica")
+
+    col1,col2 = st.columns(2)
+    var31 = col1.selectbox("Seleccione la variable categórica - Eje X", categoricas)
+    var32 = col2.selectbox("Seleccione la variable numérica - Eje Y", numericas, key=2)
+
+    if var31 is not None and var32 is not None:
+        fig3 = plt.figure(figsize=(10,4))
+        sns.boxplot(data=ss.dataset, x=var31, y=var32)
+        plt.title(f"Boxplot entre {var31} - {var32}")
+        st.pyplot(fig3)
+    else:
+        st.error("Una de las variables no se encuentra disponible en el dataset")
+
+    st.markdown("#### Categórica vs Categórica")
+
+    col1,col2 = st.columns(2)
+    var41 = col1.selectbox("Seleccione la variable categórica 1 - Eje X", categoricas)
+    var42 = col2.selectbox("Seleccione la variable categórica 2 - Eje Y", categoricas)
+
+    if var31 is not None and var32 is not None:
+        contingency_table = pd.crosstab(ss.dataset[var41], ss.dataset[var42])
+        fig, ax = plt.subplots(figsize=(8, 6))
+        mosaic(contingency_table.stack(), ax=ax, labelizer=lambda k: "")
+        st.pyplot(fig)
+    else:
+        st.error("Una de las variables no se encuentra disponible en el dataset")
 
 def main():
     st.title("Proyecto 1 - Product Development")
