@@ -1,0 +1,73 @@
+2023-11-28 19:30:47,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:30:47,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:30:47,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:30:47,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:39:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:39:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:39:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:39:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 19:39:12,335:INFO:Initializing load_model()
+2023-11-28 19:39:12,335:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:02:40,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:02:40,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:02:40,857:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:02:40,857:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:02:41,045:INFO:Initializing load_model()
+2023-11-28 20:02:41,046:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:14:08,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:14:08,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:14:08,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:14:08,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:14:08,762:INFO:Initializing load_model()
+2023-11-28 20:14:08,762:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:16:25,273:INFO:Initializing predict_model()
+2023-11-28 20:16:25,274:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f6f6236c430>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f6f61b09430>)
+2023-11-28 20:16:25,274:INFO:Checking exceptions
+2023-11-28 20:16:25,274:INFO:Preloading libraries
+2023-11-28 20:16:25,279:INFO:Set up data.
+2023-11-28 20:16:25,302:INFO:Set up index.
+2023-11-28 20:24:07,266:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:24:07,266:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:24:07,266:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:24:07,266:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:24:07,469:INFO:Initializing load_model()
+2023-11-28 20:24:07,469:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)

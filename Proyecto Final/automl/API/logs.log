@@ -1,0 +1,881 @@
+2023-11-28 20:40:10,438:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:40:10,438:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:40:10,438:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:40:10,438:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:40:10,609:INFO:Initializing load_model()
+2023-11-28 20:40:10,609:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:40:19,451:INFO:Initializing predict_model()
+2023-11-28 20:40:19,451:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f5eaf554910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f5eaf54ac10>)
+2023-11-28 20:40:19,458:INFO:Checking exceptions
+2023-11-28 20:40:19,459:INFO:Preloading libraries
+2023-11-28 20:40:19,461:INFO:Set up data.
+2023-11-28 20:40:19,502:INFO:Set up index.
+2023-11-28 20:43:12,776:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:43:12,776:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:43:12,776:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:43:12,776:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:43:12,982:INFO:Initializing load_model()
+2023-11-28 20:43:12,982:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:43:25,669:INFO:Initializing predict_model()
+2023-11-28 20:43:25,671:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fc2d7949910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fc2d7941c10>)
+2023-11-28 20:43:25,673:INFO:Checking exceptions
+2023-11-28 20:43:25,674:INFO:Preloading libraries
+2023-11-28 20:43:25,676:INFO:Set up data.
+2023-11-28 20:43:25,703:INFO:Set up index.
+2023-11-28 20:44:13,568:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:44:13,568:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:44:13,568:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:44:13,568:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:44:13,792:INFO:Initializing load_model()
+2023-11-28 20:44:13,792:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:46:03,258:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:46:03,260:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:46:03,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:46:03,263:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:46:03,675:INFO:Initializing load_model()
+2023-11-28 20:46:03,675:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:46:07,902:INFO:Initializing predict_model()
+2023-11-28 20:46:07,904:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f43757d5310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f43757ceaf0>)
+2023-11-28 20:46:07,905:INFO:Checking exceptions
+2023-11-28 20:46:07,906:INFO:Preloading libraries
+2023-11-28 20:46:07,907:INFO:Set up data.
+2023-11-28 20:46:07,928:INFO:Set up index.
+2023-11-28 20:46:25,742:INFO:Initializing predict_model()
+2023-11-28 20:46:25,743:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f43757113a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f437570f280>)
+2023-11-28 20:46:25,743:INFO:Checking exceptions
+2023-11-28 20:46:25,743:INFO:Preloading libraries
+2023-11-28 20:46:25,745:INFO:Set up data.
+2023-11-28 20:46:25,760:INFO:Set up index.
+2023-11-28 20:50:53,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:50:53,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:50:53,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:50:53,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-28 20:50:53,924:INFO:Initializing load_model()
+2023-11-28 20:50:53,924:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-11-28 20:51:10,138:INFO:Initializing predict_model()
+2023-11-28 20:51:10,138:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fc791f41910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fc791f37af0>)
+2023-11-28 20:51:10,138:INFO:Checking exceptions
+2023-11-28 20:51:10,138:INFO:Preloading libraries
+2023-11-28 20:51:10,144:INFO:Set up data.
+2023-11-28 20:51:10,181:INFO:Set up index.
+2023-11-28 21:10:55,684:INFO:Initializing predict_model()
+2023-11-28 21:10:55,685:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fc791f41250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'rain_1h', 'snow_1h',
+                                             'clouds_all', 'Rush Hour'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['holiday', 'weather_main'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(inclu...
+                                                                    'weather_main'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fc791f37e50>)
+2023-11-28 21:10:55,685:INFO:Checking exceptions
+2023-11-28 21:10:55,685:INFO:Preloading libraries
+2023-11-28 21:10:55,686:INFO:Set up data.
+2023-11-28 21:10:55,698:INFO:Set up index.
+2023-12-18 22:45:35,709:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-18 22:45:35,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-18 22:45:35,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-18 22:45:35,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-18 22:45:35,913:INFO:Initializing load_model()
+2023-12-18 22:45:35,913:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 20:27:40,632:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:27:40,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:27:40,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:27:40,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:27:40,811:INFO:Initializing load_model()
+2023-12-19 20:27:40,812:INFO:load_model(model_name=../../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 20:28:16,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:28:16,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:28:16,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:28:16,087:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 20:28:16,257:INFO:Initializing load_model()
+2023-12-19 20:28:16,257:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 20:28:16,351:INFO:Initializing load_model()
+2023-12-19 20:28:16,351:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 20:28:16,362:INFO:Initializing load_model()
+2023-12-19 20:28:16,362:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 20:59:06,634:INFO:Initializing predict_model()
+2023-12-19 20:59:06,634:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fcbde7ed370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fcbde715670>)
+2023-12-19 20:59:06,635:INFO:Checking exceptions
+2023-12-19 20:59:06,635:INFO:Preloading libraries
+2023-12-19 20:59:06,638:INFO:Set up data.
+2023-12-19 20:59:06,649:INFO:Set up index.
+2023-12-19 21:10:59,400:INFO:Initializing predict_model()
+2023-12-19 21:10:59,401:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fcc04eef7f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fcbde7159d0>)
+2023-12-19 21:10:59,401:INFO:Checking exceptions
+2023-12-19 21:10:59,401:INFO:Preloading libraries
+2023-12-19 21:10:59,401:INFO:Set up data.
+2023-12-19 21:10:59,409:INFO:Set up index.
+2023-12-19 21:20:17,637:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:20:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:20:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:20:17,641:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:20:17,889:INFO:Initializing load_model()
+2023-12-19 21:20:17,889:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 21:20:17,995:INFO:Initializing load_model()
+2023-12-19 21:20:17,995:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 21:20:18,009:INFO:Initializing load_model()
+2023-12-19 21:20:18,010:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 21:20:24,248:INFO:Initializing predict_model()
+2023-12-19 21:20:24,249:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff5b493ae80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator', DecisionTreeRegressor(random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff5b48de790>)
+2023-12-19 21:20:24,249:INFO:Checking exceptions
+2023-12-19 21:20:24,250:INFO:Preloading libraries
+2023-12-19 21:20:24,252:INFO:Set up data.
+2023-12-19 21:20:24,269:INFO:Set up index.
+2023-12-19 21:20:42,122:INFO:Initializing predict_model()
+2023-12-19 21:20:42,122:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff5b491e160>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff5b48de310>)
+2023-12-19 21:20:42,122:INFO:Checking exceptions
+2023-12-19 21:20:42,123:INFO:Preloading libraries
+2023-12-19 21:20:42,124:INFO:Set up data.
+2023-12-19 21:20:42,143:INFO:Set up index.
+2023-12-19 21:21:45,915:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:21:45,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:21:45,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:21:45,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:21:46,194:INFO:Initializing load_model()
+2023-12-19 21:21:46,194:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 21:21:46,311:INFO:Initializing load_model()
+2023-12-19 21:21:46,311:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 21:21:46,327:INFO:Initializing load_model()
+2023-12-19 21:21:46,328:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 21:22:35,341:INFO:Initializing predict_model()
+2023-12-19 21:22:35,342:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf43e17a90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf43de7790>)
+2023-12-19 21:22:35,343:INFO:Checking exceptions
+2023-12-19 21:22:35,344:INFO:Preloading libraries
+2023-12-19 21:22:35,346:INFO:Set up data.
+2023-12-19 21:22:35,373:INFO:Set up index.
+2023-12-19 21:22:43,950:INFO:Initializing predict_model()
+2023-12-19 21:22:43,950:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf43def8b0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf43de7310>)
+2023-12-19 21:22:43,950:INFO:Checking exceptions
+2023-12-19 21:22:43,950:INFO:Preloading libraries
+2023-12-19 21:22:43,951:INFO:Set up data.
+2023-12-19 21:22:43,959:INFO:Set up index.
+2023-12-19 21:22:56,031:INFO:Initializing predict_model()
+2023-12-19 21:22:56,031:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf435da280>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator', DecisionTreeRegressor(random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf43de75e0>)
+2023-12-19 21:22:56,031:INFO:Checking exceptions
+2023-12-19 21:22:56,032:INFO:Preloading libraries
+2023-12-19 21:22:56,032:INFO:Set up data.
+2023-12-19 21:22:56,041:INFO:Set up index.
+2023-12-19 21:30:37,799:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:30:37,799:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:30:37,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:30:37,800:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:30:37,975:INFO:Initializing load_model()
+2023-12-19 21:30:37,976:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 21:30:38,067:INFO:Initializing load_model()
+2023-12-19 21:30:38,067:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 21:30:38,078:INFO:Initializing load_model()
+2023-12-19 21:30:38,079:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 21:31:11,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:31:11,186:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:31:11,186:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:31:11,186:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:31:11,622:INFO:Initializing load_model()
+2023-12-19 21:31:11,622:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 21:31:11,966:INFO:Initializing load_model()
+2023-12-19 21:31:11,967:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 21:31:11,998:INFO:Initializing load_model()
+2023-12-19 21:31:11,999:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 21:31:22,992:INFO:Initializing predict_model()
+2023-12-19 21:31:22,993:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f16d47487c0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f16d470a940>)
+2023-12-19 21:31:22,994:INFO:Checking exceptions
+2023-12-19 21:31:22,994:INFO:Preloading libraries
+2023-12-19 21:31:22,996:INFO:Set up data.
+2023-12-19 21:31:23,019:INFO:Set up index.
+2023-12-19 21:34:49,907:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:34:49,907:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:34:49,907:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:34:49,907:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 21:34:50,140:INFO:Initializing load_model()
+2023-12-19 21:34:50,141:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 21:34:50,257:INFO:Initializing load_model()
+2023-12-19 21:34:50,257:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 21:34:50,275:INFO:Initializing load_model()
+2023-12-19 21:34:50,275:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 21:34:52,430:INFO:Initializing predict_model()
+2023-12-19 21:34:52,431:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff120342f10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff120313940>)
+2023-12-19 21:34:52,432:INFO:Checking exceptions
+2023-12-19 21:34:52,432:INFO:Preloading libraries
+2023-12-19 21:34:52,434:INFO:Set up data.
+2023-12-19 21:34:52,447:INFO:Set up index.
+2023-12-19 21:34:52,873:INFO:Initializing predict_model()
+2023-12-19 21:34:52,873:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff1201ee910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator', DecisionTreeRegressor(random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff120390f70>)
+2023-12-19 21:34:52,874:INFO:Checking exceptions
+2023-12-19 21:34:52,874:INFO:Preloading libraries
+2023-12-19 21:34:52,874:INFO:Set up data.
+2023-12-19 21:34:52,889:INFO:Set up index.
+2023-12-19 21:34:53,258:INFO:Initializing predict_model()
+2023-12-19 21:34:53,258:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff1201ee2e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff120390f70>)
+2023-12-19 21:34:53,258:INFO:Checking exceptions
+2023-12-19 21:34:53,258:INFO:Preloading libraries
+2023-12-19 21:34:53,259:INFO:Set up data.
+2023-12-19 21:34:53,267:INFO:Set up index.
+2023-12-19 22:31:22,863:INFO:Initializing predict_model()
+2023-12-19 22:31:22,863:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff12030a6d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff1203135e0>)
+2023-12-19 22:31:22,863:INFO:Checking exceptions
+2023-12-19 22:31:22,863:INFO:Preloading libraries
+2023-12-19 22:31:22,864:INFO:Set up data.
+2023-12-19 22:31:22,871:INFO:Set up index.
+2023-12-19 22:31:23,106:INFO:Initializing predict_model()
+2023-12-19 22:31:23,106:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff120391eb0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator', DecisionTreeRegressor(random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff1206d2d30>)
+2023-12-19 22:31:23,106:INFO:Checking exceptions
+2023-12-19 22:31:23,106:INFO:Preloading libraries
+2023-12-19 22:31:23,107:INFO:Set up data.
+2023-12-19 22:31:23,115:INFO:Set up index.
+2023-12-19 22:31:23,346:INFO:Initializing predict_model()
+2023-12-19 22:31:23,346:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7ff12031b3a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff1206d2d30>)
+2023-12-19 22:31:23,347:INFO:Checking exceptions
+2023-12-19 22:31:23,347:INFO:Preloading libraries
+2023-12-19 22:31:23,347:INFO:Set up data.
+2023-12-19 22:31:23,357:INFO:Set up index.
+2023-12-19 22:32:59,823:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:32:59,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:32:59,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:32:59,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:32:59,974:INFO:Initializing load_model()
+2023-12-19 22:32:59,974:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 22:33:00,061:INFO:Initializing load_model()
+2023-12-19 22:33:00,061:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 22:33:00,073:INFO:Initializing load_model()
+2023-12-19 22:33:00,073:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 22:52:51,487:WARNING:C:\Users\pablo\anaconda3\envs\mlops\lib\site-packages\pydantic\_internal\_fields.py:128: UserWarning: Field "model_server_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+
+2023-12-19 22:52:51,503:WARNING:C:\Users\pablo\anaconda3\envs\mlops\lib\site-packages\pydantic\_internal\_config.py:317: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+
+2023-12-19 22:52:52,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:52:52,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:52:52,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:52:52,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-19 22:52:53,151:INFO:Initializing load_model()
+2023-12-19 22:52:53,151:INFO:load_model(model_name=../models/model_v1, platform=None, authentication=None, verbose=True)
+2023-12-19 22:52:53,236:WARNING:C:\Users\pablo\anaconda3\envs\mlops\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3', 'setuptools': '68.0.0', 'pycaret': '3.1.0', 'IPython': '8.17.2', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.1', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.6', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.9.18', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.3.1', 'setuptools': '68.0.0', 'pycaret': '3.2.0', 'IPython': '8.18.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.9.18', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-12-19 22:52:53,236:INFO:Initializing load_model()
+2023-12-19 22:52:53,236:INFO:load_model(model_name=../models/model_v2, platform=None, authentication=None, verbose=True)
+2023-12-19 22:52:53,242:WARNING:C:\Users\pablo\anaconda3\envs\mlops\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3', 'setuptools': '68.0.0', 'pycaret': '3.1.0', 'IPython': '8.17.2', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.1', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.6', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.9.18', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.3.1', 'setuptools': '68.0.0', 'pycaret': '3.2.0', 'IPython': '8.18.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.9.18', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-12-19 22:52:53,243:INFO:Initializing load_model()
+2023-12-19 22:52:53,243:INFO:load_model(model_name=../models/model_v3, platform=None, authentication=None, verbose=True)
+2023-12-19 22:52:53,289:WARNING:C:\Users\pablo\anaconda3\envs\mlops\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3', 'setuptools': '68.0.0', 'pycaret': '3.1.0', 'IPython': '8.17.2', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.1', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.6', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.9.18', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.3.1', 'setuptools': '68.0.0', 'pycaret': '3.2.0', 'IPython': '8.18.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.9.18', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-12-19 22:58:49,977:INFO:Initializing predict_model()
+2023-12-19 22:58:49,978:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEA15F4C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DEB212F70>)
+2023-12-19 22:58:49,979:INFO:Checking exceptions
+2023-12-19 22:58:49,979:INFO:Preloading libraries
+2023-12-19 22:58:49,992:INFO:Set up data.
+2023-12-19 22:58:50,027:INFO:Set up index.
+2023-12-19 23:03:36,359:INFO:Initializing predict_model()
+2023-12-19 23:03:36,359:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEA15F970>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DE7F90820>)
+2023-12-19 23:03:36,359:INFO:Checking exceptions
+2023-12-19 23:03:36,359:INFO:Preloading libraries
+2023-12-19 23:03:36,361:INFO:Set up data.
+2023-12-19 23:03:36,366:INFO:Set up index.
+2023-12-19 23:04:01,605:INFO:Initializing predict_model()
+2023-12-19 23:04:01,606:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DE7D264F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DEA13CB80>)
+2023-12-19 23:04:01,606:INFO:Checking exceptions
+2023-12-19 23:04:01,606:INFO:Preloading libraries
+2023-12-19 23:04:01,606:INFO:Set up data.
+2023-12-19 23:04:01,612:INFO:Set up index.
+2023-12-19 23:04:17,669:INFO:Initializing predict_model()
+2023-12-19 23:04:17,669:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEA0E16A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DE7F90820>)
+2023-12-19 23:04:17,669:INFO:Checking exceptions
+2023-12-19 23:04:17,669:INFO:Preloading libraries
+2023-12-19 23:04:17,670:INFO:Set up data.
+2023-12-19 23:04:17,678:INFO:Set up index.
+2023-12-19 23:04:21,018:INFO:Initializing predict_model()
+2023-12-19 23:04:21,018:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEB1F6F10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DEA13CC10>)
+2023-12-19 23:04:21,018:INFO:Checking exceptions
+2023-12-19 23:04:21,018:INFO:Preloading libraries
+2023-12-19 23:04:21,019:INFO:Set up data.
+2023-12-19 23:04:21,024:INFO:Set up index.
+2023-12-19 23:04:50,950:INFO:Initializing predict_model()
+2023-12-19 23:04:50,950:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEB1F6F10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DE7F90940>)
+2023-12-19 23:04:50,950:INFO:Checking exceptions
+2023-12-19 23:04:50,950:INFO:Preloading libraries
+2023-12-19 23:04:50,951:INFO:Set up data.
+2023-12-19 23:04:50,956:INFO:Set up index.
+2023-12-19 23:06:16,103:INFO:Initializing predict_model()
+2023-12-19 23:06:16,103:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DE7F999D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DEA13C160>)
+2023-12-19 23:06:16,103:INFO:Checking exceptions
+2023-12-19 23:06:16,103:INFO:Preloading libraries
+2023-12-19 23:06:16,104:INFO:Set up data.
+2023-12-19 23:06:16,109:INFO:Set up index.
+2023-12-19 23:33:37,011:INFO:Initializing predict_model()
+2023-12-19 23:33:37,025:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DEA10BC10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DE7F90820>)
+2023-12-19 23:33:37,026:INFO:Checking exceptions
+2023-12-19 23:33:37,026:INFO:Preloading libraries
+2023-12-19 23:33:37,046:INFO:Set up data.
+2023-12-19 23:33:37,089:INFO:Set up index.
+2023-12-19 23:34:33,756:INFO:Initializing predict_model()
+2023-12-19 23:34:33,757:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025DE7FA60D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Tenure', 'Usage Frequency',
+                                             'Support Calls', 'Payment Delay',
+                                             'Total Spend',
+                                             'Last Interaction'],
+                                    transformer=SimpleImputer())...
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0.1))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=2023))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025DEA13CC10>)
+2023-12-19 23:34:33,759:INFO:Checking exceptions
+2023-12-19 23:34:33,759:INFO:Preloading libraries
+2023-12-19 23:34:33,760:INFO:Set up data.
+2023-12-19 23:34:33,764:INFO:Set up index.
